@@ -1,0 +1,24 @@
+#login-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.7em;
+    width: 350px;
+    position: relative;
+  }
+  
+  .Sign-Up-btn {
+    margin-top: 2.5em;
+    height: 2.5em;
+  }
+  .Login-btn {
+    margin-top: 2.5em;
+    height: 2.5em;
+    float: right;
+  }
+  .footer-sec {
+    text-align: center;
+  }
+  .footer-sec a {
+    text-decoration: none;
+  }
+  
