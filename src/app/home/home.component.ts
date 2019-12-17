@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../service/auth.service';
 import { Router } from '@angular/router';
+import { MatSidenav } from '@angular/material';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +12,9 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor(private authService:AuthService, private router : Router) { }
+
+  sidenav: MatSidenav
+
 
   ngOnInit() {
   }

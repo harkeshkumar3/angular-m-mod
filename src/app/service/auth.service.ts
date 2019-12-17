@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +7,9 @@ import { Injectable } from '@angular/core';
 export class AuthService {
 
   constructor() { }
+
+  public sideNavState$: Subject<boolean> = new Subject();
+
   public isAuthenticated(): boolean {
     const userData = sessionStorage.getItem('userData');
     console.log(userData);
